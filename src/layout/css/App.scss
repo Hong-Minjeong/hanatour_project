@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+// 공통 사용 - 폰트, 기본px, 색상(글자색, 무채색, 메인컬러, 서브컬러), 그림자
+
+// 프리텐다드 폰트
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+// 프리텐다드 폰트
+$baseFont : 'Pretendard';
+$baseFontSize : 16px;
+
+// 색상
+// 글자색
+$fontColor: #333333;
+
+// 무채색
+$grayColor: #848484;
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+// 메인 컬러
+$mainColor1: #5E2BB8;
+$mainColor2: #08D1D9;
+
+// 서브 컬러 -> 약관 동의의 파란색(원래는 링크 부분), 패키지 페이지의 연보라색 (2개)
+$subColor1: #E9E4F3;
+$subColor2: #F9F7FC;
+$subColor3: #3F87DC;
+
+// 카드 그림자
+$cardShadow: 0px 4px 16px rgba(17, 17, 17, 0.15);
