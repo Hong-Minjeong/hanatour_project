@@ -7,13 +7,16 @@ import './layout/css/App.css'; //공통
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './pages/Main';
+import { BrowserRouter } from 'react-router';
 
 function App() {
   return (
     <>
+    <BrowserRouter>
       <Header></Header>
       <Main></Main>
       <Footer></Footer>
+    </BrowserRouter>  
     </>
   );
 }
