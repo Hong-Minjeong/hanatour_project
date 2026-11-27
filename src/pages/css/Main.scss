@@ -1,0 +1,98 @@
+@charset "utf-8";
+@use '../../layout/css/App.scss' as c;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+//@mixin
+
+//@mixin
+
+//슬라이드 섹션 서식
+.heroSection{
+  font-family:c.$baseFont, Arial, sans-serif;
+  >.mainSlide{
+    position:relative;
+    max-height:700px;
+    >.mainSlideText{
+      width:440px;
+      height:100%;
+      background:rgba(0,0,0,.5);
+      color:#fff;
+      position:absolute;
+      left:16%;
+      >.mainSlideTextInner{
+        position:relative;
+        top:34%;
+        left:10%;
+        transform:translate(0, -50%);
+        >h2{
+          display:inline-block;
+          width:180px;
+          line-height:120%;
+          font-size:40px;
+          margin-bottom:20px;
+        }
+        >p{
+          line-height:120%;
+          font-size:20px;
+        }
+      }
+      >.pagenation{
+        display:block;
+        width:116px; height:36px;
+        line-height:36px;
+        font-size:16px;
+        background:#7f837f;
+        text-align:center;
+        position:absolute;
+        bottom:20px;
+        left:10%
+      }
+    }
+    >img{
+      display:block;
+      width:100%;
+      height:100%;
+      max-height:700px;
+      object-fit:cover;
+    }
+  }
+  >.dtInputForm{
+    width:100%;
+    background:#fff;
+    >.dtInputFormInner{
+      width:c.$baseWidth;
+      margin:0 auto;
+      >.selectDtMenu{
+        >input[type=radio]{
+          // display:none;
+        }
+        >label{
+          border:none;
+          border-bottom:1px solid c.$grayColor;
+          background:none;
+        }
+        >label:checked{
+          border:none;
+          border-bottom:1px solid c.$mainColor1;
+          background:none;
+        }
+        >button:first-child{
+
+        }
+      }
+      >.dt{
+  
+      }
+      >.start{
+  
+      }
+      >.date{
+  
+      }
+      >button{
+  
+      }
+    }
+  }
+}
