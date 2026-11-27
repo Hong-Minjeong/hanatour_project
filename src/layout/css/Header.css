@@ -1,0 +1,144 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+header {
+  width: 100%;
+  height: 140px;
+  font-family: "Pretendard";
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.header_top {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+.header_top ul {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+}
+.header_top > div {
+  display: flex;
+  align-items: center;
+}
+.header_top > div .search_box {
+  position: relative;
+  margin-left: 20px;
+  width: 449px;
+  height: 46px;
+  border-radius: 25px;
+  border: 2px solid #333333;
+}
+.header_top > div .search_box [type=text] {
+  border: none;
+  padding: 0 10px;
+  width: 90%;
+  outline: none;
+  height: 100%;
+  background-color: transparent;
+  font-size: 16px;
+}
+.header_top > div .search_box [type=button] {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.header_pc {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #848484;
+  display: flex;
+  gap: 5px;
+}
+.header_pc button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.header_pc .depth1_pc {
+  display: flex;
+  gap: 72px;
+}
+.header_pc .depth1_pc > li {
+  position: relative;
+}
+.header_pc .depth1_pc > li > a {
+  display: block;
+  padding: 15px 0;
+}
+.header_pc .depth1_pc > li .depth2 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 10;
+}
+.header_pc .depth1_pc > li .depth2 li a {
+  display: block;
+  padding: 6px 0;
+  white-space: nowrap;
+}
+.header_pc .depth1_pc > li:hover .depth2 {
+  display: block;
+}
+.header_pc .icon_menu {
+  margin-left: auto;
+  padding: 5px 0;
+  display: flex;
+  gap: 10px;
+}
+.header_pc .icon_menu li a {
+  display: flex;
+  flex-direction: column;
+}
+.header_pc .icon_menu li a svg {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+.header_pc .icon_menu li a span {
+  font-size: 12px;
+  text-align: center;
+}
+
+.all_menu {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+  position: absolute;
+}
+.all_menu .all_menu_wrap {
+  width: 1200px;
+  display: flex;
+  gap: 72px;
+}
+.all_menu .btn_close {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */
