@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* 줄간격 */
 body { line-height: 1; }
-/* ol, ul, li { list-style: none;} */
+ol, ul, li { list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {
 	content: ''; content: none;

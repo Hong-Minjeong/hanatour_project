@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import "./App.scss";
+
+a{
+    color: $fontColor;
+    font-size: $baseFontSize;
+    text-decoration: none;
+}

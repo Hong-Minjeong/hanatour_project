@@ -2,6 +2,7 @@
 import './layout/css/Reset.css'; //초기화
 
 import './layout/css/App.css'; //공통
+import './layout/css/common.css';
 
 //헤더, 푸터 콤포넌트
 import Header from './layout/Header';

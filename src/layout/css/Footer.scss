@@ -1,0 +1,50 @@
+@import "./App.scss";
+
+.footer{
+    border-top: 1px solid $grayColor;
+    font-size: $smallFontSize;
+    color: $fontColor;
+}
+
+.footer b{font-weight: bold;}
+
+.footerInner{
+max-width: $baseWidth;
+margin: 0 auto;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+width: 700px;
+}
+
+.footerNav > ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    a{font-size: $smallFontSize;}
+}
+
+.footerNav .bar{
+    position: relative;
+    left: 13px;
+    top: -1px;
+}
+
+.footerSns img{
+    width: 28px;
+    height: 28px;
+}
+
+.footerMiddle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+    

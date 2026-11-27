@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router';
+import './css/Footer.css';
 
 function Footer() {
   return (
@@ -7,25 +8,29 @@ function Footer() {
       <div className='footerInner'>
         <div className='footerTop'>
           <nav className='footerNav'>
-            <Link to="/sub/wish">회사소개</Link>
-            <Link to="/sub/wish">이용약관</Link>
-            <Link to="/sub/wish">개인정보처리방침</Link>
-            <Link to="/sub/wish">여행약관</Link>
-            <Link to="/sub/wish">해외여행자보험</Link>
-            <Link to="/sub/wish">마케팅제휴</Link>
-            <Link to="/sub/wish">공식인증예약센터 검색</Link>
+            <ul>
+              <li><Link to="/sub/wish">회사소개</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish">이용약관</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish" >개인정보처리방침</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish">여행약관</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish">해외여행자보험</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish">마케팅제휴</Link><span className='bar'>|</span></li>
+              <li><Link to="/sub/wish">공식인증예약센터 검색</Link></li>
+            </ul>
           </nav>
 
           <div className='footerSns'>
-            <Link to="/sub/wish"><i className='fa-brands fa-facebook-f'></i></Link>
-            <Link to="/sub/wish"><i className="fa-brands fa-instagram"></i></Link>
-            <Link to="/sub/wish"><i className="fa-solid fa-comment"></i></Link>
-            <Link to="/sub/wish"><i className="fa-brands fa-youtube"></i></Link>
+            <Link to="/sub/wish"><img src='/images/footer/sns1.png' alt='페이스북' /></Link>
+            <Link to="/sub/wish"><img src='/images/footer/sns2.png' alt='카카오톡' /></Link>
+            <Link to="/sub/wish"><img src='/images/footer/sns3.png' alt='유튜브' /></Link>
+            <Link to="/sub/wish"><img src='/images/footer/sns4.png' alt='인스타그램' /></Link>
           </div>
         </div>
 
+        <div className='footerMiddle'>
+        <div className='footerLeft'>
         <div className='footerCompany'>
-          <p><strong>(주)하나투어</strong> <span className='bar'>|</span>대표집행임원 :000<span className='bar'>|</span>주소 : (00000) 서울특별시 종로구 00동 0길 00 <span className='bar'>|</span>사업자등록번호 : 000-00-00000<span className='bar'>|</span><strong><Link to="/sub/wish">사업자정보확인</Link></strong></p>
+          <p><b>(주)하나투어</b> <span className='bar'>|</span>대표집행임원 :000<span className='bar'>|</span>주소 : (00000) 서울특별시 종로구 00동 0길 00 <span className='bar'>|</span>사업자등록번호 : 000-00-00000<span className='bar'>|</span><strong><Link to="/sub/wish"><b>사업자정보확인</b></Link></strong></p>
           <p>통신판매업신고번호 : 0000-0000호<span className='bar'>|</span> 관광사업자 등록번호 : 제0000-000000호 <span className='bar'>|</span>호스팅 사업자 : 하나투어, 000000<span className='bar'>|</span>등록관청 : 서울특별시 종로구청</p>
           <p>개인정보 보호책임자 : 000<span className='bar'>|</span>영업보증공제 15억 1천만원 가입<span className='bar'>|</span>기획여행보증공제 7억원 가입<span className='bar'>|</span>FAX : 00-000-0000<span className='bar'>|</span>이메일 : 00000@0000.000</p>
         </div>
@@ -49,15 +54,18 @@ function Footer() {
           하나투어 가상 계좌가 아닌 다른 계좌(개인, 대리점 등)에 대한 입금 유도가 있는 경우, 반드시 입금 전에 하나투어 고객센터로 문의/신고 하여 주시기 바랍니다.</p>
         </div>
         <p className='footerCopyright'>COPYRIGHT© HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+        </div>
 
         <div className='footerEscrow'>
           <p>하나은행 구매안전 서비스</p>
           <p>고객님은 안전거래를 위해 현금으로 결제시<br/> (주)하나투어에서 가입한 하나은행으로<br/> 구매안전 서비스를 이용하실 수 있습니다.</p>
           <p><Link to='/sub/wish'>서비스 가입사실 확인</Link></p>
         </div>
+        </div>
 
         <div className='footerAwards'>
           <div className='footerAwardsLeft'>
+            <div className='awardItem'>
             <img src='/images/footer/f_L_1.png' alt='...' />
             <p>소비자중심경영(CCM)
                 <br />
@@ -67,6 +75,9 @@ function Footer() {
                 <br />
                 2025년 &apos;명예의 전당&apos; 포상
             </p>
+            </div>
+
+            <div className='awardItem'>
             <img src='/images/footer/f_L_2.png' alt='...' />
             <p>
                 KMAC 선정
@@ -77,6 +88,9 @@ function Footer() {
                 <br />
                 사부문 1위
             </p>
+            </div>
+
+            <div className='awardItem'>
             <img src='/images/footer/f_L_3.png' alt='...' />
               <p>
                 한국표준협회 선정
@@ -87,8 +101,15 @@ function Footer() {
                 <br />
                 부문 1위
               </p>
-
+              </div>
           </div>  
+
+          <div className='footerAwardsRight'>
+            <img src='/images/footer/f_R_1.jpg' alt='인증마크1'/>
+            <img src='/images/footer/f_R_2.png' alt='인증마크2'/>
+            <img src='/images/footer/f_R_3.png' alt='인증마크3'/>
+          </div>
+
         </div>
 
       </div>
