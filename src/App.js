@@ -1,6 +1,6 @@
-
+import React from 'react'
+import { BrowserRouter , Routes, Route } from 'react-router';
 import './layout/css/Reset.css'; //초기화
-
 import './layout/css/App.css'; //공통
 import './layout/css/common.css';
 
@@ -8,16 +8,18 @@ import './layout/css/common.css';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './pages/Main';
-import { BrowserRouter } from 'react-router';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </BrowserRouter>  
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="*" element={<Main />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
